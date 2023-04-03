@@ -49,13 +49,28 @@ code {
   width: 58%;
   margin: auto;
   margin-top: 10px;
-  padding: 10px 16px;
+  padding: 0px 16px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   overflow: auto;
-  height: 400px;
+  max-height: 400px;
 }
+.middle {
+  margin: auto;
+  width: 59%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.read-summary {
+  margin-bottom: 20px;
+}
+
 .text {
   margin: auto;
   width: 58%;
@@ -64,9 +79,25 @@ code {
   margin-bottom: 10px;
   margin-top: 20px;
 }
+
+.loader-container {
+  margin: auto;
+  width: 58%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
 /* Webkit scrollbar */
 .output::-webkit-scrollbar {
   width: 8px;
+}
+
+.fetching {
+  margin-right: 10px;
+  padding-bottom: 2px;
 }
 
 .output::-webkit-scrollbar-thumb {
